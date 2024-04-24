@@ -1,6 +1,7 @@
 package pluralsight;
 
 public class Employee {
+    public String getEmployeeId;
     private  int Id;
     private String name;
     private double hoursWorked;
@@ -11,6 +12,9 @@ public class Employee {
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
+    }
+
+    public Employee(String employeeid, String name, Double payrate) {
     }
 
     public int getId() {
@@ -43,5 +47,8 @@ public class Employee {
 
     public void setPayRate(double payRate) {
         this.payRate = payRate;
+    }
+
+    public String getEmployeeId() {
     }
 }
